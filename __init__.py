@@ -342,7 +342,11 @@ def pull_libs():
             log(f"pull_libs: latest version is {version}")
             
             system = sys.platform
-            machine = os.uname().machine
+            machine = None
+            try:
+                machine = os.uname().machine
+            except:
+                pass
             
             if system == "darwin":
                 platform_tag = "macosx"
