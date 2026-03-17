@@ -4,6 +4,8 @@
 
 TrackpuckTools is a Blender add-in that connects HID-based 6DoF input peripheral devices (such as [Trackpuck](https://github.com/badjeff/trackpuck)) to Blender, providing fluid control over viewport camera orbit, pan, zoom, and rotation.
 
+https://github.com/user-attachments/assets/83aaf9c9-1d84-4c99-927c-6f882763e450
+
 ## Supported Devices
 
 Any HID peripheral that reports 6-axis movement (X, Y, Z translation + RX, RY, RZ rotation) via standard HID reports. The 6 axis values must be reported in the first 6 8-bit signed bytes of the HID report. Default configuration targets the Trackpuck device (ZMK VID 0x1d50, PID 0x615e) with [zmk-hid-joystick](https://github.com/badjeff/zmk-hid-joystick) module.
